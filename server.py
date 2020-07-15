@@ -67,7 +67,7 @@ async def handle(ws, path):
         await unregister(ws)
 
 
-print('Starting server: ws://localhost:8765')
+print('Starting server: ws://localhost:80')
 asyncio.get_event_loop().run_until_complete(
-    websockets.serve(handle, 'localhost', 8765))
+    websockets.serve(handle, 'localhost', 80))
 asyncio.get_event_loop().run_forever()
